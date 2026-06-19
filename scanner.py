@@ -3,7 +3,7 @@ import pandas as pd
 import re
 import json
 import time
-from google.colab import files
+
 
 def get_real_time_osv_data(library_name, version, ecosystem):
     """Hits Google OSV API for 100% Genuine Real-Time Data"""
@@ -174,6 +174,6 @@ def ultimate_beast_v4():
         with open(report_name, "w", encoding="utf-8") as f: f.write(html_content)
 
         print(f"\n[+] SCAN COMPLETE! Download your deep audit report.")
-        files.download(report_name)
+        
 
 ultimate_beast_v4()
